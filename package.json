@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "forever server.js",
-    "watch": "forever -w server.js"
+    "start": "node index.js",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -14,17 +15,19 @@
   },
   "keywords": [],
   "author": "Anastasia",
-  "license": "ISC",
+  "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
-    "@koa/cors": "^3.3.0",
-    "faker": "^5.5.3",
-    "forever": "^3.0.4",
+    "@koa/cors": "^3.1.0",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
+    "faker": "^5.5.3",
     "koa-router": "^10.0.0",
     "koa-slow": "^2.1.0"
   },
-  "engines": {
-    "node": "11.x"
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
