@@ -1,8 +1,8 @@
 {
-  "name": "workers",
+  "name": "ahj-servise-worker-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Service Worker BackEnd",
+  "main": "index.js",
   "scripts": {
     "prestart": "npm install",
     "start": "node index.js",
@@ -11,10 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NastyaKatyushkina/workers.git"
+    "url": "git+https://github.com/valentin-panov/ahj-workers-back.git"
   },
-  "keywords": [],
-  "author": "Anastasia",
+  "author": "Valentin Panov",
   "license": "MIT",
   "engines": {
     "node": "14.x"
